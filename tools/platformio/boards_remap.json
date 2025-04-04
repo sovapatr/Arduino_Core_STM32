@@ -12,6 +12,7 @@
     "microduino32_flash": "GENERIC_F103C8TX",
     "netduino2plus": "GENERIC_F405RGTX",
     "nucleo_wb55rg_p": "P_NUCLEO_WB55RG",
+    "odesc_v4_2": "ODESC_V4_2",
     "olimex_e407": "GENERIC_F407ZGTX",
     "olimex_f103": "GENERIC_F103R8TX",
     "olimex_h407": "GENERIC_F407ZGTX",

@@ -23,9 +23,11 @@ add_library(variant_bin STATIC EXCLUDE_FROM_ALL
   PeripheralPins.c
   PeripheralPins_FEATHER_F405.c
   PeripheralPins_MICROMOD_F405.c
+  PeripheralPins_ODESC_V4_2.c
   variant_FEATHER_F405.cpp
   variant_generic.cpp
   variant_MICROMOD_F405.cpp
+  variant_ODESC_V4_2.cpp
 )
 target_link_libraries(variant_bin PUBLIC variant_usage)
 

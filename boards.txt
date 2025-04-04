@@ -4694,6 +4694,17 @@ GenF4.menu.pnum.FEATHER_F405.build.variant=STM32F4xx/F405RGT_F415RGT
 GenF4.menu.pnum.FEATHER_F405.build.peripheral_pins=-DCUSTOM_PERIPHERAL_PINS
 GenF4.menu.pnum.FEATHER_F405.debug.svd_file={runtime.tools.STM32_SVD.path}/svd/STM32F4xx/STM32F405.svd
 
+# ODESC V4.2 STM32F405 board
+GenF4.menu.pnum.ODESC_V4_2.upload.maximum_size=1048576
+GenF4.menu.pnum.ODESC_V4_2=ODESC V4.2 STM32F405
+GenF4.menu.pnum.ODESC_V4_2.upload.maximum_data_size=131072
+GenF4.menu.pnum.ODESC_V4_2.build.board=ODESC_V4_2
+GenF4.menu.pnum.ODESC_V4_2.build.product_line=STM32F405xx
+GenF4.menu.pnum.ODESC_V4_2.build.variant_h=variant_{build.board}.h
+GenF4.menu.pnum.ODESC_V4_2.build.variant=STM32F4xx/F405RGT_F415RGT
+GenF4.menu.pnum.ODESC_V4_2.build.peripheral_pins=-DCUSTOM_PERIPHERAL_PINS
+GenF4.menu.pnum.ODESC_V4_2.debug.svd_file={runtime.tools.STM32_SVD.path}/svd/STM32F4xx/STM32F405.svd
+
 # ThunderPack F411xxE
 # https://github.com/jgillick/ThunderPack/tree/STM32F4
 GenF4.menu.pnum.THUNDERPACK_F411=ThunderPack v1.1+
