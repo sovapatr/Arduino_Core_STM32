@@ -4,63 +4,73 @@
 /*----------------------------------------------------------------------------
  *        Pins
  *----------------------------------------------------------------------------*/
-#define PC13        2   // ANTI_TAMP    // M0_nCS
-#define PC14        3   // OSC32_IN     // M1_nCS
-#define PC15        4   // OSC32_OUT    // M1_ENC_Z
-#define PH0         5
-#define PH1         6
-
-#define PA4         PIN_A0
-#define PA5         PIN_A1
-#define PA6         PIN_A2
+// VBAT
+#define PC13        0   // ANTI_TAMP    // M0_nCS
+#define PC14        1   // OSC32_IN     // M1_nCS
+#define PC15        2   // OSC32_OUT    // M1_ENC_Z
+#define PH0         3
+#define PH1         4
+//NRST
 #define PC0         PIN_A3
 #define PC1         PIN_A4
 #define PC2         PIN_A5
 #define PC3         PIN_A6
+//VSSA
+//VDDA
+#define PA0         9
+#define PA1         10
+#define PA2         11
+#define PA3         12
+//VSS
+//VDD
+#define PA4         PIN_A0
+#define PA5         PIN_A1
+#define PA6         PIN_A2
+#define PA7         16
+#define PC4         17
 #define PC5         PIN_A7
+#define PB0         19
+#define PB1         20
+#define PB2         21
+#define PB10        22
+#define PB11        23
+//VCAP_1
+//VDD
+#define PB12        24
+#define PB13        25
+#define PB14        26
+#define PB15        27
+#define PC6         28
+#define PC7         29
+#define PC8         30
+#define PC9         31
+#define PA8         32
+#define PA9         33
+#define PA10        34
+#define PA11        35
+#define PA12        36
+#define PA13        37
+#define PA14        38
+#define PA15        39
+#define PC10        40
+#define PC11        41
+#define PC12        42
+#define PD2         43
+#define PB3         44
+#define PB4         45
+#define PB5         46
+#define PB6         47
+#define PB7         48
+#define PB8         49
+#define PB9         50
 
-#define PA0         14
-#define PA1         15
-#define PA2         16
-#define PA3         17
-#define PA7         23
-#define PC4         24
-#define PC5         25
-#define PB0         26
-#define PB1         27
-#define PB2         28
-#define PB10        29
-#define PB11        30
-#define PB12        33
-#define PB13        34
-#define PB14        35
-#define PB15        36
-#define PC6         37
-#define PC7         38
-#define PC8         39
-#define PC9         40
-#define PA8         41
-#define PA9         42
-#define PA10        43
-#define PA11        44
-#define PA12        45
-#define PA13        46
-#define PA14        49
-#define PA15        50
-#define PC10        51
-#define PC11        52
-#define PC12        53
-#define PD2         54
-#define PB3         55
-#define PB4         56
-#define PB5         57
-#define PB6         58
-#define PB7         59
-#define PB8         61
-#define PB9         62
+#define PC10_ALT1               (PC10 | ALT1)
+#define PC11_ALT1               (PC11 | ALT1)
+#define PC12_ALT1               (PC10 | ALT1)
+
 
 // This must be a literal
-#define NUM_DIGITAL_PINS        63
+#define NUM_DIGITAL_PINS        50
 // This must be a literal with a value less than or equal to MAX_ANALOG_INPUTS
 #define NUM_ANALOG_INPUTS       8
 
@@ -76,7 +86,7 @@
 
 // SPI Definitions
 #ifndef PIN_SPI_SS
-  #define PIN_SPI_SS            PB2
+  #define PIN_SPI_SS            PNUM_NOT_DEFINED
 #endif
 #ifndef PIN_SPI_MOSI
   #define PIN_SPI_MOSI          PC12
